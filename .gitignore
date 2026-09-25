@@ -1,0 +1,22 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+
+# Archivos compilados e invisibles de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Base de datos local de Django
+*.sqlite3
+db.sqlite3
+
+# Archivos de configuración de entorno / claves secretas
+.env
+
+# Archivos temporales del sistema y del editor (VS Code)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
