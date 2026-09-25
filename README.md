@@ -1,20 +1,18 @@
-# Sistema de Inventario y Punto de Venta (POS)
+# Restaurante POS + KDS (Sistema de Gestión y Cocina por Estaciones)
 
 ## Visión del Producto
-El Sistema POS es una solución web ágil e intuitiva diseñada para pequeños y medianos comercios. Permite automatizar el control de inventario en tiempo real, agilizar la atención en la caja registradora, procesar pagos y consultar reportes de ventas, reduciendo errores operativos y mejorando la toma de decisiones.
+Sistema web integral en Django diseñado para la operación en tiempo real de restaurantes con servicio a la mesa. Permite a los meseros gestionar mesas por zonas (Salón, Terraza, Pets), tomar comandas con observaciones personalizadas por plato, enviar órdenes automáticas a pantallas de cocina ruteadas por estación (KDS: Plancha, Pastas, Ensaladas, Bar), y facilitar a la caja el cobro con precuenta, propinas y fraccionamiento de cuenta[cite: 1, 2].
+
+## Arquitectura Técnica
+* **Backend:** Python & Django (Estructura modular de Apps: `usuarios`, `salon`, `menu`, `pedidos`, `facturacion`)
+* **Frontend:** HTML5, Tailwind CSS, HTMX / JavaScript[cite: 2]
+* **Base de Datos:** SQLite (Desarrollo) / PostgreSQL (Producción)[cite: 2]
+* **Control de Versiones y Documentación:** Git, GitHub, Markdown[cite: 2]
 
 ## Equipo de Desarrollo
-* **Desarrollador Único (PO / SM / Dev):** Miguel David Rojas Gonzalez
+* **Desarrollador Único (PO / SM / Dev):** Miguel David Rojas Gonzalez[cite: 2]
 
-## Tecnologías Utilizadas
-* **Backend:** Python & Django (Django REST Framework)
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Base de Datos:** SQLite (Desarrollo) / PostgreSQL (Producción)
-* **Control de Versiones y Gestión:** Git, GitHub, Markdown
-
-## Organización del Repositorio
-Este proyecto se gestiona bajo la metodología **Scrum**. La estructura del repositorio está organizada de la siguiente manera[cite: 2]:
-
-* `docs/`: Documentación general (Product Backlog, Historias de Usuario)[cite: 2].
-* `sprints/`: Planeación y evidencias de cada Sprint (`sprint-01`, `sprint-02`)[cite: 2].
-* `src/`: Código fuente de la aplicación en Django[cite: 2].
+## Estructura del Repositorio
+* `docs/`: Documentación del proyecto (`product-backlog.md`, `user-stories.md`)[cite: 2].
+* `sprints/`: Evidencias y planificación de cada Sprint (`sprint-01/`)[cite: 2].
+* `src/`: Código fuente de las aplicaciones en Django[cite: 2].
